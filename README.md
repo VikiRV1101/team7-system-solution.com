@@ -1,90 +1,115 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Team7</title>
+  <title>Team7 System Solution</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      padding: 40px;
-      background: #f9f9f9;
     }
-    h2 {
-      color: #333;
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
     }
-    .btn {
-      display: block;
-      width: 220px;
-      margin: 15px auto;
-      padding: 15px;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+    nav a {
       color: white;
       text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: 0.2s;
+      padding: 14px 20px;
+      display: block;
     }
-    .btn:hover {
-      opacity: 0.9;
-      transform: scale(1.05);
+    nav a:hover {
+      background: #555;
     }
-    .call { background-color: #28a745; }
-    .whatsapp { background-color: #25d366; }
-    .email { background-color: #007bff; }
-
-    /* Services Section */
-    .services {
-      margin-top: 40px;
-      text-align: left;
-      display: inline-block;
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .services h3 {
+    .hero {
       text-align: center;
-      color: #444;
-      margin-bottom: 15px;
+      padding: 60px 20px;
+      background: linear-gradient(120deg, #007bff, #00c6ff);
+      color: white;
     }
-    .services ul {
-      list-style: none;
-      padding: 0;
-      font-size: 16px;
+    .hero h1 { font-size: 40px; margin: 10px 0; }
+    .hero p { font-size: 18px; }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #007bff;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
     }
-    .services ul li {
-      margin: 10px 0;
-      padding: 8px;
-      border-bottom: 1px solid #eee;
+    .section {
+      padding: 40px 20px;
+      text-align: center;
     }
-    .services ul li::before {
-      content: "✔️ ";
-      color: #28a745;
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h2>Contact Team7 System Solution</h2>
+  <header>
+    <h1>Team7 System Solution</h1>
+    <p>Laptop • PC • Printer • CCTV • Design & Printing • Billing Software</p>
+  </header>
 
-  <!-- Contact Buttons -->
-  <a href="tel:9360039283" class="btn call">📞 Call Now</a>
-  <a href="https://wa.me/919360039283" class="btn whatsapp">💬 WhatsApp</a>
-  <a href="mailto:teamsevensystemsolution@gmail.com" class="btn email">✉️ Email Us</a>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- Services Section -->
-  <div class="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>💻 Laptop & PC Sales & Services</li>
-      <li>🖨️ Printer Sales & Repair</li>
-      <li>📹 CCTV Installation & Maintenance</li>
-      <li>🧾 Billing Software Solutions</li>
-      <li>🎨 Print & Design (Visiting Cards, Menu Cards, Flyers, Posters, Invitations, Stickers, Labels)</li>
-      <li>🖥️ Custom Portfolio & Webpage Design</li>
-    </ul>
-  </div>
+  <section class="hero">
+    <h1>Your Trusted Tech & Design Partner</h1>
+    <p>One-stop solution for Computers, CCTV, Printing, and Business Needs</p>
+    <a href="tel:+919360039283" class="btn">📞 Call Us Now</a>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">💻 Laptop & PC Sales/Service</div>
+      <div class="card">🖨️ Printer Sales/Repair</div>
+      <div class="card">📹 CCTV Installation</div>
+      <div class="card">🧾 Billing Software</div>
+      <div class="card">🎨 Print & Design (Cards, Flyers, Posters)</div>
+      <div class="card">🌐 Website & Portfolio Design</div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Angalakurichi, Pollachi<br>
+    📞 93600 39283 / 93630 06495<br>
+    ✉️ teamsevensystemsolution@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Team7 System Solution | Created by Vignesh</p>
+  </footer>
 </body>
 </html>
